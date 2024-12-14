@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Manchester Chamber of Commerce</title>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <style>
+        /* Navbar Customization */
+        .navbar {
+            background-color: #4c2e7f; /* Purple Theme */
+            padding: 10px;
+        }
+        .navbar a {
+            color: white !important;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #ffd700 !important; /* Golden Highlight */
+        }
+        .nav-logo img {
+            height: 50px;
+        }
+
+        /* Custom Button */
+        .custom-btn {
+            background-color: #6c5ce7;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .custom-btn:hover {
+            background-color: #4c2e7f;
+            color: #ffd700;
+        }
+
+        /* Carousel Images */
+        .carousel-item img {
+            height: 300px; /* Fixed height */
+            object-fit: cover; /* Prevents distortion */
+        }
+
+        /* Location and Rating Box */
+        .info-box {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+        .rating-stars {
+            color: #ffd700; /* Golden Star */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4c2e7f;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand nav-logo" href="#">
+                    <img src="logo.jpg" alt="Logo">
+                </a>
+                <!-- Mobile Toggle Button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://t.me/Nasty7796" target="_blank">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#signup">SIGNUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="firstimage.jpg" class="d-block w-100" alt="First Slide">
+            </div>
+            <div class="carousel-item">
+                <img src="2ndphoto.jpg" class="d-block w-100" alt="Second Slide">
+            </div>
+            <div class="carousel-item">
+                <img src="3rdphoto.jpg" class="d-block w-100" alt="Third Slide">
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <!-- Text Section -->
+            <div class="col-md-6">
+                <h2 class="mb-3">The Boosting Project of Greater Manchester Chamber of Commerce</h2>
+                <p>
+                    EcomBoost Hub is proud to be a key initiative under the "Boosting Project" by the Greater Manchester Chamber of Commerce. This groundbreaking project focuses on accelerating e-commerce growth and financial inclusion by empowering individuals to earn through global platforms like Amazon, Alibaba, and AliExpress.
+                </p>
+                <p>
+                    Led by an experienced team, including <strong>Clive Memmott - Chief Executive</strong> and <strong>Phil Cusack - Chairman</strong>, this initiative brings innovation and economic opportunity to communities worldwide. The team’s vision and dedication ensure seamless platform functionality, secure transactions, and unmatched earning potential for users.
+                </p>
+                <p>
+                    By aligning with Manchester's e-commerce objectives, EcomBoost Hub transforms how people interact with global markets, making financial independence a reality for all.
+                </p>
+            </div>
+            <!-- Image and Info Section -->
+            <div class="col-md-6 text-center">
+                <img src="boostingoffice.jpg" alt="Office Image" class="img-fluid rounded shadow mb-3">
+                <div class="info-box">
+                    <h5>Location</h5>
+                    <p>Elliot House, 151 Deansgate, Manchester M3 3WD, United Kingdom</p>
+                </div>
+                <div class="info-box">
+                    <h5>Google Rating</h5>
+                    <div class="rating-stars">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="text-center my-4">
+        <a href="#login" class="btn custom-btn me-3">LOGIN</a>
+        <a href="#signup" class="btn custom-btn">SIGNUP</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Greater Manchester Chamber of Commerce. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
